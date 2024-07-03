@@ -1,4 +1,4 @@
-// Message us content
+// Message Us Content
 function submitForm() {
     const name = document.getElementById('name').value;
     const dob = document.getElementById('dob').value;
