@@ -13,33 +13,32 @@
         <div class="logo-icon"></div>
 
         <nav>
-            <a>Home</a>
+            <a href="#home">Home</a>
             <a href="#our-profile">Our Profile</a>
             <a>Portofolio</a>
-            <a>Message</a>
+            <a href="#message-us">Message</a>
         </nav>
     </header>
 
-    <hr />
     <main>
         <!--Home Content-->
-        <section>
+        <section id="home">
             <header>
-                <h1>Hi User, Welcome to Website</h1>
+                <h1>Hi, welcome to my portfolio website!</h1>
             </header>
 
             <article>
-                <p>Ini adalah website portofolio saya</p>
+                <p>Journey through my portfolio and witness the fusion of art and technology.</p>
 
                 <div class="banner-container"></div>
             </article>
         </section>
-        <hr />
+
 
         <!--Our Profile Content-->
-        <section id="our-profile">
+        <section id="our-profile" class="profile-section">
             <header>
-                <h1>Our Profile</h1>
+                <h1 class="section-header">Our Profile</h1>
             </header>
 
             <article class="profile-content">
@@ -63,9 +62,55 @@
         </section>
 
         <!--Portofolio Content-->
-
+        <section id="portofolio" class="portofolio-section">
+            <header>
+                <h1 class="section-hdrportofolio">Portofolio</h1>
+            </header>
+            
+        </section>
+        
         <!--Message Us Content-->
+        <section id="message-us">
+        <div class="container">
+            <div class="form-container">
+                <h1>Message Us</h1>
+                <form id="messageForm">
+                    <div class="form-group">
+                        <label for="name">Nama:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="dob">Tanggal Lahir:</label>
+                        <input type="date" id="dob" name="dob" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Jenis Kelamin:</label>
+                        <input type="radio" id="male" name="gender" value="Laki-Laki" required>
+                        <label for="male">Laki-Laki</label>
+                        <input type="radio" id="female" name="gender" value="Perempuan">
+                        <label for="female">Perempuan</label>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="button" onclick="submitForm()">Submit</button>
+                </form>
+            </div>
+            <div class="output-container">
+                <div class="output">
+                    <p><strong>Current time:</strong> <span id="currentTime"></span></p>
+                    <p><strong>Nama:</strong> <span id="outputName"></span></p>
+                    <p><strong>Tanggal Lahir:</strong> <span id="outputDob"></span></p>
+                    <p><strong>Jenis Kelamin:</strong> <span id="outputGender"></span></p>
+                    <p><strong>Pesan:</strong> <span id="outputMessage"></span></p>
+                </div>
+            </div>
+        </div>
+        </section>
     </main>
-
 </body>
+
+<footer>Powered by Nevarda Machubby</footer>
+<script src="js/script.js"></script>
 </html>

@@ -2,12 +2,16 @@
 
 main {
     padding: 32px;
+    max-width: 1200px; /* Contoh batasan lebar konten utama */
+    margin: 0 auto; /* Memusatkan konten utama */
 }
 
 .nav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #073058; /* Background biru navy */
+    padding: 20px 0;
 }
 
 .logo-icon {
@@ -19,18 +23,35 @@ main {
     background-image: url(../assets/logo.jpg);
     background-size: cover;
     border-radius: 50%;
+    margin-left: 40px;
 }
 
-nav>a{
-    padding-left: 32px;
-    padding-right: 32px;
-    border: 1px solid;
+nav > a {
+    padding: 10px 20px; /* Atur padding sesuai kebutuhan */
+    color: #fff; /* Warna teks putih */
+    text-decoration: none; 
+    margin-right: 40px;
 }
 
 .banner-container{
-    height: 350px;
+    height: 370px;
     width: 100%;
-    border: 1px solid;
+
+     /* For banner image */
+     background-image: url(../assets/banner1.jpeg);
+     background-size: cover;
+}
+
+.section-header {
+    background-color: #beb8a7; 
+    color: #073058; 
+    padding: 10px 20px;
+    margin-bottom: 20px; 
+}
+
+.profile-section {
+    background-color: #beb8a7; 
+    padding: 20px;
 }
 
 .profile-content {
@@ -42,6 +63,7 @@ nav>a{
     text-align: center;
     flex: 1;
     text-align: -webkit-center;
+    color: #073058; 
 }
 
 .profile-icon {
@@ -67,4 +89,106 @@ nav>a{
 
 .divider {
     flex: 2;
+}
+
+/* For portofolio content */
+.section-hdrportofolio {
+    background-color: #073058; 
+    color: #fff; 
+    padding: 10px 20px;
+    margin-bottom: 20px; 
+}
+
+
+
+
+/* For message content */
+.container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #beb8a7;
+    padding: 20px;
+    width: 100%;
+    max-width: 1145px;
+    height: 70%;  /* Adjust height as necessary */
+}
+
+.form-container {
+    flex: 1;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    width: 150px; /* Adjust the width as needed */
+    font-weight: bold;
+}
+
+input[type="text"], input[type="date"], textarea {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(125, 162, 255, 0.988);
+}
+
+textarea {
+    height: 100px;
+}
+
+button {
+    padding: 10px 225px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.gender-options {
+    display: flex;
+    align-items: center;
+}
+
+.gender-options label {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+
+.output-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    margin-left: 150px;
+}
+
+.output {
+    border: 1px solid #ccc;
+    padding: 20px; /* Increase padding for more space inside the box */
+    border-radius: 5px;
+    width: 470px; /* Set a fixed width for the box */
+    height: 250px; /* Set a fixed height for the box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.output p {
+    margin: 10px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #073058; /* Background biru navy */
+    border-top: 1px solid #e0e0e0;
+    color: #fff; /* Warna teks putih */
 }
