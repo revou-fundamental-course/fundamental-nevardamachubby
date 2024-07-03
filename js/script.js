@@ -18,8 +18,3 @@ function submitForm() {
     console.log("Gender: " + gender);
     console.log("Message: " + message);
 }
-
-
-
-
-

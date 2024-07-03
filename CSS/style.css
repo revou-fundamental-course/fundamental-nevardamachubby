@@ -33,15 +33,17 @@ nav > a {
     margin-right: 40px;
 }
 
-.banner-container{
-    height: 370px;
+/* Banner content */
+.banner-container {
+    height: 350px;
     width: 100%;
-
-     /* For banner image */
-     background-image: url(../assets/banner1.jpeg);
-     background-size: cover;
+    border: 1px solid;
+    background-image: url(../assets/banner1.jpeg);
+    background-size: cover;
 }
 
+
+/* Portfolio content */
 .section-header {
     background-color: #beb8a7; 
     color: #073058; 
@@ -99,7 +101,50 @@ nav > a {
     margin-bottom: 20px; 
 }
 
+.portfolio {
+    background-color: #fff;
+    margin: 2rem 0;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.portfolio-item img {
+    width: 80%; /* Mengurangi ukuran gambar */
+    height: auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.portfolio-item h3 {
+    margin: 0;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.portfolio-item p {
+    font-size: 1rem;
+    line-height: 1.4;
+    text-align: center;
+}
 
 
 /* For message content */
@@ -191,4 +236,10 @@ footer {
     background-color: #073058; /* Background biru navy */
     border-top: 1px solid #e0e0e0;
     color: #fff; /* Warna teks putih */
+}
+
+@media only screen and (max-width: 520px){
+    .nav-container{
+        flex-direction: column;
+    }
 }
