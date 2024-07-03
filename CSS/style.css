@@ -235,11 +235,5 @@ footer {
     padding: 20px 0;
     background-color: #073058; /* Background biru navy */
     border-top: 1px solid #e0e0e0;
-    color: #fff; /* Warna teks putih */
-}
-
-@media only screen and (max-width: 520px){
-    .nav-container{
-        flex-direction: column;
-    }
+    color: #fff;
 }
